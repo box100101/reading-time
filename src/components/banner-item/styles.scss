@@ -1,0 +1,20 @@
+.banner-item {
+    &__wrapper {
+        border-radius: 100px 0 100px 0;
+        width: 1300px;
+        height: 715px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .btn-custom {
+            background-color: #5353ac;
+            padding: 15px 25px;
+            color: #fff;
+            font-size: 18px;
+            outline: none;
+            border: none;
+            border-radius: 50px;
+        }
+    }
+}

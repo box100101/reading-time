@@ -1,0 +1,68 @@
+.banner {
+    &__wrapper {
+        position: relative;
+        .btn {
+            &__play {
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                background: linear-gradient(
+                    0deg,
+                    rgba(171, 27, 38, 1) 0%,
+                    rgba(85, 82, 169, 1) 100%
+                );
+                cursor: pointer;
+                position: absolute;
+                z-index: 10;
+                bottom: -28px;
+
+                > span {
+                    background-color: #fff;
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    box-sizing: border-box;
+                    padding: 10px;
+                    position: relative;
+                    display: block;
+                    transform: translateX(-3%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    > svg {
+                        height: 60px;
+                        width: 60px;
+                    }
+                }
+            }
+
+            &-control {
+                background-color: #fff;
+                outline: none;
+                height: 35px;
+                width: 35px;
+                border: none;
+                border-radius: 50%;
+                box-shadow: 3px 3px 5px rgba(0, 0, 0, 36%);
+                position: absolute;
+                z-index: 10;
+                bottom: 0px;
+
+                &.left {
+                    left: 50%;
+                    transform: translate(-75px, 20px);
+                }
+
+                &.right {
+                    right: 50%;
+                    transform: translate(135px, 20px);
+                }
+            }
+        }
+    }
+
+    &__img {
+        border-radius: 100px 0 100px 0;
+    }
+}

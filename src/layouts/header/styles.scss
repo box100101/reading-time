@@ -1,0 +1,80 @@
+.header {
+    &__wrapper {
+        width: 100%;
+        padding-top: 25px;
+        position: relative;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+    &__container {
+        width: 1280px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        height: 44px;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8%;
+        flex: 1;
+
+        > .item {
+            font-size: 17px;
+            color: #141414;
+            text-transform: uppercase;
+            text-align: center;
+
+            &:hover {
+                border-bottom: 4px solid #f4a5c7;
+            }
+
+            &.bold {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 6%;
+
+        > .btn {
+            padding: 6px;
+            font-size: 15px;
+            min-width: 60px;
+            border-radius: 100px;
+            font-family: inherit;
+
+            &.outline {
+                background-color: transparent;
+                color: #5353ac;
+            }
+
+            &.fill {
+                background-color: #5353ac;
+                color: #fff;
+            }
+        }
+    }
+
+    &__toggle-menu {
+        margin-left: 10px;
+        > svg {
+            height: 35px;
+            width: 35px;
+        }
+    }
+}
